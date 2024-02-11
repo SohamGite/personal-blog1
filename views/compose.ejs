@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+
+    <section id="create-post">
+        <h2 class="subtitle">Create a Post</h2>
+        <div class="form-container">
+            <form action="/submit" method="post">
+                <input id="title" name="title" placeholder="Type Title here" type="text" required class="input"><br>
+                <textarea id="content" name="content" placeholder="Open up your Mind here" cols="30" rows="10" class="input"></textarea><br>
+                <input id="author" name="author" placeholder="Who is this again" type="text" required class="input"><br>
+           
+                <input type="submit" name="option" value="Create Post" class="submit submit-create">
+                <input type="submit" name="option" value="Edit Post" class="submit submit-edit">
+                <input type="submit" name="option" value="Delete Post" class="submit submit-delete">
+            </form>
+
+        </div>
+    </section>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<main>
+    <h1 class="title">Welcome to My Blog!</h1>
+    <ul class="list">
+        <% posts.forEach(post => { %>
+            <div class="list-item">
+            <li>
+                <h3><%= post.title %></h3>
+                <p><%= post.content %></p>
+                <p><%= post.author %></p>
+            </li>
+        </div>
+        <% }) %>
+    </ul>
+</main>
+
+<%- include('partials/footer') %>
